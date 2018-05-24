@@ -1,0 +1,171 @@
+{
+	"id": "fca7ce70-27df-f526-3517-17f7adb7784d",
+	"name": "Spring Boot REST API",
+	"description": "\"Spring Boot REST API for Music App\"",
+	"order": [],
+	"folders": [
+		{
+			"id": "6798207a-e04f-b91f-b7f4-e1f5d54d818c",
+			"name": "api",
+			"description": "Folder for api",
+			"order": [
+				"c4e2a8e4-2133-776a-3371-a74ecbc251b6",
+				"f26dfe38-354d-674a-e94a-b555d2da821f",
+				"865e510c-3f33-6076-d530-7edbf9065477",
+				"801a0ba2-6cd1-7053-30a7-050dd59d4b5a"
+			],
+			"owner": "837293",
+			"collectionId": "fca7ce70-27df-f526-3517-17f7adb7784d",
+			"folders_order": []
+		}
+	],
+	"timestamp": 1413302258635,
+	"owner": "837293",
+	"folders_order": [],
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "801a0ba2-6cd1-7053-30a7-050dd59d4b5a",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/playlists/92d8123f-e9f6-4806-8e0e-1c6a5d46f2ed/musicas/12659604-a4a1-4c4c-8a5f-29fff1ad2ac5",
+			"folder": "6798207a-e04f-b91f-b7f4-e1f5d54d818c",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524439146421,
+			"name": "deleteMusic",
+			"description": "",
+			"collectionId": "fca7ce70-27df-f526-3517-17f7adb7784d",
+			"responses": []
+		},
+		{
+			"id": "865e510c-3f33-6076-d530-7edbf9065477",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/playlists/92d8123f-e9f6-4806-8e0e-1c6a5d46f2ed/musicas",
+			"folder": "6798207a-e04f-b91f-b7f4-e1f5d54d818c",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524439222216,
+			"name": "addMusics",
+			"description": "",
+			"collectionId": "fca7ce70-27df-f526-3517-17f7adb7784d",
+			"responses": [],
+			"rawModeData": "    {\n        \"id\": \"12659604-a4a1-4c4c-8a5f-29fff1ad2ac5\",\n        \"nome\": \"24K Magic\",\n        \"artistaId\": \"88ac7b00-9489-49ae-a5b1-79d3ba7fc2e6\",\n        \"artista\": {\n            \"id\": \"88ac7b00-9489-49ae-a5b1-79d3ba7fc2e6\",\n            \"nome\": \"Bruno Mars\"\n        }\n    }"
+		},
+		{
+			"id": "c4e2a8e4-2133-776a-3371-a74ecbc251b6",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/musicas/?filtro=Bruno+Mars",
+			"folder": "6798207a-e04f-b91f-b7f4-e1f5d54d818c",
+			"queryParams": [
+				{
+					"key": "filtro",
+					"value": "Bruno+Mars",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524439023948,
+			"name": "getByFilter",
+			"description": "",
+			"collectionId": "fca7ce70-27df-f526-3517-17f7adb7784d",
+			"responses": []
+		},
+		{
+			"id": "f26dfe38-354d-674a-e94a-b555d2da821f",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/playlists/?user=default",
+			"folder": "6798207a-e04f-b91f-b7f4-e1f5d54d818c",
+			"queryParams": [
+				{
+					"key": "user",
+					"value": "default",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1524439030809,
+			"name": "getByUser",
+			"description": "",
+			"collectionId": "fca7ce70-27df-f526-3517-17f7adb7784d",
+			"responses": []
+		}
+	]
+}
